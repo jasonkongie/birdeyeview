@@ -2,12 +2,14 @@
   "name": "birdeyeview",
   "version": "0.1.0",
   "private": true,
+  "homepage": "jasonkongie.com",
   "dependencies": {
     "@react-spring/parallax": "^9.6.1",
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
     "axios": "^1.2.2",
+    "gh-pages": "^5.0.0",
     "i": "^0.3.7",
     "npm": "^9.2.0",
     "os-browserify": "^0.3.0",
@@ -19,12 +21,15 @@
     "react-type-animation": "^2.1.2",
     "web-vitals": "^2.1.4"
   },
-  "scripts": {
+"scripts": {
+   "predeploy": "npm run build",
+   "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
-  },
+},
+
   "eslintConfig": {
     "extends": [
       "react-app",
